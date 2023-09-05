@@ -1,0 +1,30 @@
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content:space-around;
+}
+.col-3{
+    width: 300px;
+    flex: auto;
+    padding:14px;
+}
+.Footer ul li{
+    list-style: none;
+    margin-bottom: 0.5rem;
+    color: rgb(165, 165, 165);
+}
+.Footer{
+    display: block;
+    background-color: rgb(41, 41, 41);
+    margin-top: 30px;
+}
+.Footer-container{
+    display: block;
+}
+.col-3 h2{
+    border-bottom: 2px solid rgb(193, 0, 0);
+    color: azure;
+    
+}

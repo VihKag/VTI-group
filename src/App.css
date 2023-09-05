@@ -1,38 +1,40 @@
-.App {
-  text-align: center;
+*{
+  padding: 0;
+  margin: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.flexbox {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  flex-direction: row; /* Xếp các mục từ trái sang phải khi rớt xuống */
+  justify-content: center; /* Căn giữa theo chiều ngang */
+  align-items: center; 
+  box-sizing: border-box;
 }
 
-.App-link {
-  color: #61dafb;
+.item {
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  padding: 0px 10px;
+  margin-bottom: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.list_title{
+  display: block;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom: 10px;
+  border-bottom:solid 1px black;
+}
+.list_title h2{
+  padding: 5px;
+  color: azure;
+  width: fit-content;
+  background-color: black;
+  border-radius: 20px 3px 20px 3px;
+  border: solid 2px rgb(0, 97, 29);
+}
+
+.Categories-list{
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
