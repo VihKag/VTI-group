@@ -304,7 +304,6 @@ transition: opacity 0.3s,transform 0.3s;
 .blog-container{
   display: flex;
   margin: 30px 10px;
-  height: 250px;
 }
 .blog-card{
   margin: 0 auto;
