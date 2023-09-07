@@ -14,17 +14,42 @@
     list-style: none;
     margin-bottom: 0.5rem;
     color: rgb(165, 165, 165);
+    
 }
 .Footer{
     display: block;
     background-color: rgb(41, 41, 41);
     margin-top: 30px;
+    padding-bottom: 100px;
 }
 .Footer-container{
     display: block;
 }
 .col-3 h2{
     border-bottom: 2px solid rgb(193, 0, 0);
-    color: azure;
-    
+    color: azure;  
+}
+.col-3{
+    color: rgb(165, 165, 165);
+}
+.footer-wrapper{
+    margin-bottom: 20px;
+}
+.footer-wrapper img{
+    margin-right: 20px;
+    transition: tranform 0.3s,shadow 0.3s,scale 0.3s;
+
+}
+.footer-wrapper img:hover{
+    transform: translateY(-1px);
+    scale: 1.2;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+.Footer .sm-text{
+    color: aliceblue !important;
+}
+.contain-sm-text{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
 }

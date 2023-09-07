@@ -1,42 +1,85 @@
-import React, { useState } from 'react';
+// // Pagination.js
+// import React from 'react';
 
-const itemsPerPage = 8; // Số mục hiển thị trên mỗi trang
+// const Pagination = ({ currentPage, totalPages, onPageChange }) => {
+//   const pageNumbers = [];
 
-const Pagination = ({ data }) => {
-  const [currentPage, setCurrentPage] = useState(1);
-  const totalPages = Math.ceil(data.length / itemsPerPage);
-  const startIndex = (currentPage - 1) * itemsPerPage;
-  const endIndex = startIndex + itemsPerPage;
-  const currentData = data.slice(startIndex, endIndex);
+//   for (let i = 1; i <= totalPages; i++) {
+//     pageNumbers.push(i);
+//   }
 
-  const handlePageChange = (page) => {
-    setCurrentPage(page);
-  };
+//   return (
+//     <ul className="pagination">
+//       {pageNumbers.map((pageNumber) => (
+//         <div
+//           key={pageNumber}
+//           className={`page-item ${currentPage === pageNumber ? 'active' : ''}`}
+//         >
+//           <button
+//             className="page-link"
+//             onClick={() => onPageChange(pageNumber)}
+//           >
+//             {pageNumber}
+//           </button>
+//         </div>
+//       ))}
+//     </ul>
+//   );
+// };
+
+// export default Pagination;
+
+// Pagination.js
+
+import React from 'react';
+
+const Pagination = ({ currentPage, totalPages, onPageChange }) => {
+  const pageNumbers = [];
+
+  for (let i = 1; i <= totalPages; i++) {
+    pageNumbers.push(i);
+  }
 
   return (
-    <div>
-      <ul>
-        {currentData.map((item, index) => (
-          <li key={index}>{item}</li>
-        ))}
-      </ul>
-      <div>
-        <button
-          disabled={currentPage === 1}
-          onClick={() => handlePageChange(currentPage - 1)}
+    <ul className="pagination">
+      {currentPage > 1 && (
+        <li className="page-item">
+          <button
+            className="page-link"
+            onClick={() => onPageChange(currentPage - 1)}
+          >
+            Back
+          </button>
+        </li>
+      )}
+
+      {pageNumbers.map((pageNumber) => (
+        <li
+          key={pageNumber}
+          className={`page-item ${currentPage === pageNumber ? 'active' : ''}`}
         >
-          Trang trước
-        </button>
-        <span>{currentPage}</span>
-        <button
-          disabled={currentPage === totalPages}
-          onClick={() => handlePageChange(currentPage + 1)}
-        >
-          Trang tiếp theo
-        </button>
-      </div>
-    </div>
+          <button
+            className="page-link"
+            onClick={() => onPageChange(pageNumber)}
+          >
+            {pageNumber}
+          </button>
+        </li>
+      ))}
+
+      {currentPage < totalPages && (
+        <li className="page-item">
+          <button
+            className="page-link"
+            onClick={() => onPageChange(currentPage + 1)}
+          >
+            Continue
+          </button>
+        </li>
+      )}
+    </ul>
   );
 };
 
 export default Pagination;
+

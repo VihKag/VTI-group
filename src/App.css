@@ -5,11 +5,15 @@
 .flexbox {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row; /* Xếp các mục từ trái sang phải khi rớt xuống */
-  justify-content: center; /* Căn giữa theo chiều ngang */
-  align-items: center; 
+  box-sizing: border-box;
+  justify-content:space-between;
+}
+.flexbox-nowrap {
+  display: flex;
+  flex-wrap: nowrap;
   box-sizing: border-box;
 }
+
 
 .item {
   box-sizing: border-box;
@@ -17,24 +21,51 @@
   padding: 0px 10px;
   margin-bottom: 20px;
 }
-
-.list_title{
-  display: block;
-  justify-content:space-between;
-  align-items:center;
+.container-title{
+  /* background-color: black; */
   margin-bottom: 10px;
-  border-bottom:solid 1px black;
+  height: 50px;
+  border-radius: 5px;
+}
+.list_title{
+  margin-bottom: 40px;
+  padding: 12px;
+  border-bottom: black solid 3px;
 }
 .list_title h2{
-  padding: 5px;
-  color: azure;
-  width: fit-content;
-  background-color: black;
-  border-radius: 20px 3px 20px 3px;
-  border: solid 2px rgb(0, 97, 29);
+  color: black;
+  font-weight: 700;
+  /* background-color: black;
+  border-radius: 20px 3px 20px 3px; */
+  margin: auto 15px auto 10px;
+}
+.mr-bt-4{
+  margin-bottom: 40px;
 }
 
 .Categories-list{
-  margin-bottom: 20px;
   margin-top: 20px;
 }
+.columns {
+  column-count: 4;
+  justify-content: space-around;
+  column-rule: 0px solid #3366FF;
+  align-content: space-between;
+}
+.pagination button.back {
+  background-color: #e74c3c; /* Màu đỏ */
+}
+
+.pagination button.back:hover {
+  background-color: #c0392b; /* Màu đỏ tối khi hover */
+}
+
+/* CSS cho nút Next */
+.pagination button.next {
+  background-color: #27ae60; /* Màu xanh lá cây */
+}
+
+.pagination button.next:hover {
+  background-color: #219653; /* Màu xanh lá cây tối khi hover */
+}
+/* ////////////////////////////////////////////////////////////////////// /////////////////////*/
