@@ -24,15 +24,22 @@ const ListCategory = () => {
     }, []); 
 
     return (
-        <div className="container flexbox-nowrap">
-          {isLoading ? (
-            <div>Loading...</div>
-          ) : (
-            data.map((category, index) => (
-              <CategoryCard key={index} image={category.image} type={category.type} />
-            ))
-          )}
-        </div>
+        <>
+          <div className="container container-title">
+            <div className="list_title">
+              <h2>OPTIONS</h2>
+            </div>
+          </div>  
+          <div className="container flexbox-nowrap">
+            {isLoading ? (
+              <div>Loading...</div>
+            ) : (
+              data.map((category, index) => (
+                <CategoryCard key={index} image={category.image} type={category.type} />
+              ))
+            )}
+          </div>
+        </>
       );
     };
 export default ListCategory;

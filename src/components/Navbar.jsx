@@ -7,7 +7,7 @@ const Navbar = () => {
                         <a className="Nav-item Nav-title" href="/#">MENU</a>
                     </div>  
                     <div className="Nav-group">
-                        <a className="Nav-item" href="/#">Search</a>
+                        <a className="Nav-item" href="/#">Infors</a>
                         <a className="Nav-item" href="/#">Login</a>
                         <a className="Nav-item" href="/#">Cart</a>
                     </div>                                   
