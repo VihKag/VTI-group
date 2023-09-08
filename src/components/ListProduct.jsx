@@ -10,7 +10,8 @@ const ListProduct = () =>{
         setLoading(true);
         try {
             const response = await axios.get(
-                'https://64f707229d7754084952fda5.mockapi.io/api/v1/pets');
+                // 'https://64f707229d7754084952fda5.mockapi.io/api/v1/pets'
+                'https://run.mocky.io/v3/74af4d4e-a042-43ed-80d9-0f29b8b03a00');
                 setPets(response.data);
         } catch (error) {
             console.log(error);
