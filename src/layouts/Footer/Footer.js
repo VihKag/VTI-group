@@ -44,7 +44,6 @@ function Footer(){
                 <div className="container contain-sm-text">
                     <div className='h3 sm-text'>@ 2023 Powered by Shopify</div>
                 </div>
-                
             </div>
         </>
     );
