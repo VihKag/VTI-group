@@ -8,15 +8,15 @@ function App() {
   return (
     
     <div className="App">
-      <div className="container-banner">
        <Banner/>
-      </div>
-      <div className="Categories-list">
        <ListCategory/>
-      </div>
-      <div className="Pet-list">
-        <ListProduct/>
-      </div>
+       <ListProduct 
+       title='Cats'
+       apiGet='https://run.mocky.io/v3/e6ed40f5-3eff-4002-a8a5-6422536e20d9'/>
+       <ListProduct 
+       title='Dogs'
+       apiGet='https://run.mocky.io/v3/4d058b78-b100-4bf6-9843-05f38b7cfd12'/>
+       
        <Blog/>
     </div>
   );

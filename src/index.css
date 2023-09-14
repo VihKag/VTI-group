@@ -70,7 +70,7 @@ h1, h2, h3, .h1, .h2, .h3{
   text-transform: uppercase;
   margin-bottom: 0.5rem;
 }
-/* /////////////////////   //////////////// */
+/* ///////////////////////////////////// */
 .Header-logo_container{
   padding: 10;
 }
@@ -180,7 +180,7 @@ transition: opacity 0.3s,transform 0.3s;
 }
 .category-card_container:hover .category{
   transform: translateY(0.4rem);
-  box-shadow: 0px 0px 50px rgba(255, 255, 0, 0.3); 
+  box-shadow: 0px 0px 20px rgba(255, 255, 0, 0.3); 
 }
 /* /////////////////////////////////////// */
 .Card{

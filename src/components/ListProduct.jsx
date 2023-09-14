@@ -1,33 +1,17 @@
-import React,{ useState, useEffect} from 'react';
-import axios from 'axios';
+import React,{ useState} from 'react';
+// import axios from 'axios';
 import ProductCard from './ProductCard';
 import Pagination from './Pagination';
-const ListProduct = () =>{
+import GetPetApi from '../api/GetPets';
+const ListProduct = ({apiGet,title}) =>{
     const [pets, setPets] = useState([]);
-    const [loading,setLoading]= useState(false);
 
-    const handleSearch = async () =>{
-        setLoading(true);
-        try {
-            const response = await axios.get(
-                // 'https://64f707229d7754084952fda5.mockapi.io/api/v1/pets'
-                'https://run.mocky.io/v3/74af4d4e-a042-43ed-80d9-0f29b8b03a00');
-                setPets(response.data);
-        } catch (error) {
-            console.log(error);
-        }finally {
-            setLoading(false);
-        }
+    const dataLoaded = (data) =>{
+      setPets(data);
     }
-    useEffect(() =>{
-        handleSearch();
-    },[])
-
-    //pagination
     const [currentPage, setCurrentPage] = useState(1);
     const [itemsPerPage] = useState(8); 
 
-    // Tính toán chỉ mục của sản phẩm bắt đầu và kết thúc trên trang hiện tại
     const indexOfLastItem = currentPage * itemsPerPage;
     const indexOfFirstItem = indexOfLastItem - itemsPerPage;
     const currentItems = pets.slice(indexOfFirstItem, indexOfLastItem);
@@ -38,11 +22,11 @@ const ListProduct = () =>{
       <>
         <div className="container container-title">
           <div className="list_title">
-            <h2>OUR PETS</h2>
+            <h2>{title}</h2>
           </div>
         </div>  
+        <GetPetApi dataLoaded = {dataLoaded} apiGet={apiGet}/>
         <div className="container flexbox list-product-card">
-          {loading && <p>Loading...</p>}
             {currentItems.map((pet) => (
               <ProductCard
               key={pet.id}

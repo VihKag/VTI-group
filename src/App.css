@@ -43,9 +43,6 @@
   margin-bottom: 40px;
 }
 
-.Categories-list{
-  margin-top: 20px;
-}
 .columns {
   column-count: 4;
   justify-content: space-around;
@@ -53,19 +50,18 @@
   align-content: space-between;
 }
 .pagination button.back {
-  background-color: #e74c3c; /* Màu đỏ */
+  background-color: #e74c3c; 
 }
 
 .pagination button.back:hover {
-  background-color: #c0392b; /* Màu đỏ tối khi hover */
+  background-color: #c0392b; 
 }
 
 /* CSS cho nút Next */
 .pagination button.next {
-  background-color: #27ae60; /* Màu xanh lá cây */
+  background-color: #27ae60; 
 }
 
 .pagination button.next:hover {
-  background-color: #219653; /* Màu xanh lá cây tối khi hover */
+  background-color: #219653;
 }
-/* ////////////////////////////////////////////////////////////////////// /////////////////////*/
