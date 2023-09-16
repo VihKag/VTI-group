@@ -21,27 +21,7 @@
   padding: 0px 10px;
   margin-bottom: 20px;
 }
-.container-title{
-  /* background-color: black; */
-  margin-bottom: 10px;
-  height: 50px;
-  border-radius: 5px;
-}
-.list_title{
-  margin-bottom: 40px;
-  padding: 12px;
-  border-bottom: black solid 3px;
-}
-.list_title h2{
-  color: black;
-  font-weight: 700;
-  /* background-color: black;
-  border-radius: 20px 3px 20px 3px; */
-  margin: auto 15px auto 10px;
-}
-.mr-bt-4{
-  margin-bottom: 40px;
-}
+
 
 .columns {
   column-count: 4;
@@ -49,19 +29,6 @@
   column-rule: 0px solid #3366FF;
   align-content: space-between;
 }
-.pagination button.back {
-  background-color: #e74c3c; 
-}
-
-.pagination button.back:hover {
-  background-color: #c0392b; 
-}
-
-/* CSS cho nút Next */
-.pagination button.next {
-  background-color: #27ae60; 
-}
-
-.pagination button.next:hover {
-  background-color: #219653;
+a{
+  text-decoration: none !important ;
 }

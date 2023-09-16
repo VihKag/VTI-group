@@ -1,3 +1,4 @@
+import './index.css';
 const CategoryCard =({image,type})=>{
     return(
         <div className="category-card item">

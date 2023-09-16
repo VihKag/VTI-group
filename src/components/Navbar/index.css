@@ -1,0 +1,26 @@
+.Header-navbar {
+  background-color: rgb(41, 41, 41);
+}
+.Nav-list {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.Nav-item {
+  color: white;
+  background-color: transparent;
+  font-size: 18px;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 14px 20px;
+  padding: 0.8rem;
+  font-weight: 600;
+  transition: border-bottom 0.3s;
+  height: 50px;
+}
+.Nav-item:hover {
+  border-bottom: solid rgb(255, 255, 255) 7px !important;
+}
+.Nav-title {
+  font-weight: 700;
+}

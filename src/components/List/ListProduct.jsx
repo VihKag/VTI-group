@@ -1,8 +1,9 @@
 import React,{ useState} from 'react';
 // import axios from 'axios';
-import ProductCard from './ProductCard';
-import Pagination from './Pagination';
-import GetPetApi from '../api/GetPets';
+import ProductCard from '../Product/ProductCard';
+import Pagination from '../Pagination/Pagination';
+import GetPetApi from '../../api/GetPets';
+import './index.css';
 const ListProduct = ({apiGet,title}) =>{
     const [pets, setPets] = useState([]);
 

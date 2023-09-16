@@ -1,6 +1,7 @@
-import imgblgdog from '../assets/img/blogdog.jpg';
-import imgblgcat from '../assets/img/blogcat.jpg';
-import imgblgtrlpet from '../assets/img/travelpet.jpg';
+import imgblgdog from '../../assets/img/blogdog.jpg';
+import imgblgcat from '../../assets/img/blogcat.jpg';
+import imgblgtrlpet from '../../assets/img/travelpet.jpg';
+import './index.css';
 const Blog = () =>{
     return(
         <>

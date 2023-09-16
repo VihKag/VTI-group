@@ -1,18 +1,6 @@
-// import petDogImg from '../assets/img/petimage.png';
-// import petCatImg from '../assets/img/catImg.jpg';
-// import React, { useState } from 'react';
+
+import './index.css';
 const ProductCard = ({pet}) => {
-    // let petImageSrc;
-    // switch (pet.type) {
-    //     case false:
-    //     petImageSrc = petDogImg;
-    //     break;
-    //     case true:
-    //         petImageSrc = petCatImg;
-    //         break;
-    //     default:
-    //     petImageSrc = petCatImg;
-    // }
     return (
         <div className="Card item auto-margin">
             <div className="Card-container">

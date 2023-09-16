@@ -1,6 +1,5 @@
-
-import imgdiv2 from '../assets/img/bannerpet.jpg';
-
+import imgdiv2 from '../../assets/img/bannerpet.jpg';
+import './index.css';
 const Banner = ()=>{
     return(
         <>

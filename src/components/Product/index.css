@@ -1,0 +1,58 @@
+.Card {
+  width: fit-content;
+}
+.Card-container {
+  display: inline-block;
+  vertical-align: top;
+  overflow: hidden;
+  width: 300px;
+  height: 400px;
+  margin-bottom: 2rem;
+  border-radius: 20px;
+  border: solid 0.1px rgb(168, 168, 168);
+  position: relative;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.Card-image {
+  display: block;
+  width: 100%;
+  position: relative;
+  transition: transform 0.3s, box-shadow 0.3s;
+  height: fit-content;
+  border-radius: 20px 20px 5px 5px;
+}
+.Card-image img {
+  width: 100%;
+  height: 200px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.Card-container:hover .Card-image,
+.Card-image img {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+.Card-container:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  transform: translateY(-3px);
+}
+.Card-contents {
+  width: 80%;
+  display: block;
+  /* margin-top: 20px; */
+  margin: 20px auto;
+}
+.Card-contents_btn button {
+  position: absolute;
+  width: 260px;
+  height: 2rem;
+  bottom: 20px;
+  left: 20px;
+  font-weight: bold;
+  color: #f6f6f6;
+  background-color: red;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.Card-contents_btn:hover button {
+  transform: scale(1.01);
+}

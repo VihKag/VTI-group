@@ -1,4 +1,5 @@
-import image from '../assets/img/logopetshop.png'; 
+import image from '../../assets/img/logopetshop.png'; 
+import './index.css';
 const Logo = () =>{
     return(
         <div className="Header-logo">

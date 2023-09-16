@@ -1,10 +1,10 @@
-import imgCateFood from '../assets/img/food.jpg';
-import imgDog from '../assets/img/type_dog.jpg';
-import imgCat from '../assets/img/type_cat.jpg';
-import imgTool from '../assets/img/pet_element.jpg';
-import CategoryCard from '../components/CategoryCard';
+import imgCateFood from '../../assets/img/food.jpg';
+import imgDog from '../../assets/img/type_dog.jpg';
+import imgCat from '../../assets/img/type_cat.jpg';
+import imgTool from '../../assets/img/pet_element.jpg';
+import CategoryCard from '../Category/CategoryCard';
 import { useState,useEffect } from 'react';
-
+import './index.css';
 const ListCategory = () => {
     const [isLoading, setIsLoading] = useState(true); // State variable để kiểm tra trạng thái loading
     const [data, setData] = useState([]); 

@@ -1,9 +1,9 @@
 
 import './App.css';
-import ListCategory from './components/ListCategory';
-import Banner from './components/Banner';
-import ListProduct from './components/ListProduct';
-import Blog from './components/Blog';
+import ListCategory from './components/List/ListCategory';
+import Banner from './components/Banner/Banner';
+import ListProduct from './components/List/ListProduct';
+import Blog from './components/Blog/Blog';
 function App() {
   return (
     
