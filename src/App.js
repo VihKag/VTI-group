@@ -4,11 +4,13 @@ import ListCategory from './components/List/ListCategory';
 import Banner from './components/Banner/Banner';
 import ListProduct from './components/List/ListProduct';
 import Blog from './components/Blog/Blog';
+import Carousel from './components/Carousel/Carousel';
 function App() {
   return (
     
     <div className="App">
        <Banner/>
+       <Carousel />
        <ListCategory/>
        <ListProduct 
        title='Cats'
