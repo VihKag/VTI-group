@@ -5,22 +5,26 @@ import Banner from './components/Banner/Banner';
 import ListProduct from './components/List/ListProduct';
 import Blog from './components/Blog/Blog';
 import Carousel from './components/Carousel/Carousel';
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
 function App() {
   return (
-    
-    <div className="App">
-       <Banner/>
-       <Carousel />
-       <ListCategory/>
-       <ListProduct 
-       title='Cats'
-       apiGet='https://run.mocky.io/v3/e6ed40f5-3eff-4002-a8a5-6422536e20d9'/>
-       <ListProduct 
-       title='Dogs'
-       apiGet='https://run.mocky.io/v3/4d058b78-b100-4bf6-9843-05f38b7cfd12'/>
-       
-       <Blog/>
-    </div>
+    <>
+      <div className="App">
+        <Header/>
+        <Banner/>
+        <Carousel />
+        <ListCategory/>
+        <ListProduct 
+        title='Cats'
+        apiGet='cat'/>
+        <ListProduct 
+        title='Dogs'
+        apiGet='dog'/>       
+        <Blog/>
+        <Footer/>
+      </div>
+    </>
   );
 }
 
